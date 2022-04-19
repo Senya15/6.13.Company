@@ -1,10 +1,9 @@
-package Company;
+package Company.Application;
 
-import java.util.Scanner;
+public class ScanCommand {
 
-class Application {
-
-    public static int nextIntCommand(Scanner scInt) {
+    public static int nextIntCommand() {
+        java.util.Scanner scInt = new java.util.Scanner(System.in);
         while (!scInt.hasNextInt()) {
             System.out.println("Неверно! Повторите ввод ещё раз.");
             scInt.next();
